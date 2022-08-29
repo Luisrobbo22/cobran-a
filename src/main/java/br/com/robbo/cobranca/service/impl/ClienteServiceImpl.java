@@ -1,7 +1,7 @@
-package java.br.com.robbo.cobranca.service.impl;
+package br.com.robbo.cobranca.service.impl;
 
-import java.br.com.robbo.cobranca.entity.Cliente;
-import java.br.com.robbo.cobranca.service.ClienteService;
+import br.com.robbo.cobranca.entity.Cliente;
+import br.com.robbo.cobranca.service.ClienteService;
 
 public class ClienteServiceImpl implements ClienteService {
 

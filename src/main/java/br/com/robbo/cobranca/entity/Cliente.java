@@ -1,4 +1,4 @@
-package java.br.com.robbo.cobranca.entity;
+package br.com.robbo.cobranca.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package java.br.com.robbo.cobranca.dto;
+package br.com.robbo.cobranca.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package java.br.com.robbo.cobranca;
+package br.com.robbo.cobranca;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

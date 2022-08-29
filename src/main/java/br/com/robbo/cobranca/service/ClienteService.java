@@ -1,8 +1,8 @@
-package java.br.com.robbo.cobranca.service;
+package br.com.robbo.cobranca.service;
 
 import org.springframework.stereotype.Service;
 
-import java.br.com.robbo.cobranca.entity.Cliente;
+import br.com.robbo.cobranca.entity.Cliente;
 
 @Service
 public interface ClienteService {

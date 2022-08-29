@@ -1,4 +1,4 @@
-package java.br.com.robbo.cobranca;
+package br.com.robbo.cobranca;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

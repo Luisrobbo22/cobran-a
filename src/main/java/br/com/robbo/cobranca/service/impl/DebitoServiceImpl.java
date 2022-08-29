@@ -1,15 +1,18 @@
-package java.br.com.robbo.cobranca.service.impl;
+package br.com.robbo.cobranca.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.mail.MessagingException;
-import java.br.com.robbo.cobranca.dto.ConteudoEmailDTO;
-import java.br.com.robbo.cobranca.entity.Debito;
-import java.br.com.robbo.cobranca.repository.DebitoRepository;
-import java.br.com.robbo.cobranca.service.DebitoService;
-import java.br.com.robbo.cobranca.service.EmailService;
+import br.com.robbo.cobranca.dto.ConteudoEmailDTO;
+import br.com.robbo.cobranca.entity.Debito;
+import br.com.robbo.cobranca.repository.DebitoRepository;
+import br.com.robbo.cobranca.service.DebitoService;
+import br.com.robbo.cobranca.service.EmailService;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+@Service
 public class DebitoServiceImpl implements DebitoService {
 
     private static String subject = "Notificação de débitos em aberto";
@@ -22,7 +25,7 @@ public class DebitoServiceImpl implements DebitoService {
 
     @Override
     public List<Debito> getDebitosAbertos() throws MessagingException {
-        List<Debito> debitos = debitoRepository.findDebitoByDebitoAberto(Boolean.TRUE);
+        List<Debito> debitos = debitoRepository.findDebitoByDebitoAberto();
         validaDadosEmail(debitos);
         return null;
     }
