@@ -17,7 +17,7 @@ public class EmailService {
     @Autowired
     private JavaMailSender mailSender;
 
-    @Value("${suppot.mail}")
+    @Value("${support.mail}")
     private String supportMail;
 
     public void sendEmailToCliente(String subject, String email, ConteudoEmailDTO conteudoEmailDTO) throws MessagingException {

@@ -15,8 +15,11 @@ import java.util.List;
 @RequestMapping(value = "/debito")
 public class DebitoController {
 
-    @Autowired
-    private DebitoService debitoService;
+    private final DebitoService debitoService;
+
+    public DebitoController(DebitoService debitoService) {
+        this.debitoService = debitoService;
+    }
 
     @GetMapping("/")
     public ResponseEntity<List<Debito>> getDebitosByEmailCliente() throws MessagingException {
